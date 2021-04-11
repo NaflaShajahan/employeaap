@@ -1,0 +1,23 @@
+monthview-container {
+  height: 32%;
+}
+
+calendar {
+.weekview-allday-table{
+  display: none;
+}
+
+.weekview-normal-event-container{
+margin-top: 37px;
+}
+
+.dayview-allday-label{
+  display: none;
+}
+.dayview-normal-event-container{
+ margin-top: 0px;
+}
+.dayview-allday-content-wrapper{
+ height: 0px;
+}
+}

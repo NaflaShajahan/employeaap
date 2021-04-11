@@ -8,8 +8,32 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'myschedule',
+    loadChildren: () => import('./myschedule/myschedule.module').then( m => m.MyschedulePageModule)
+  },
+  {
+    path: 'addschedule',
+    loadChildren: () => import('./addschedule/addschedule.module').then( m => m.AddschedulePageModule)
+  },
+  {
+    path: 'trackcab',
+    loadChildren: () => import('./trackcab/trackcab.module').then( m => m.TrackcabPageModule)
   },
 ];
 

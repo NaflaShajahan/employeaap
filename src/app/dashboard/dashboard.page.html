@@ -1,0 +1,105 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label>Inbox</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="paper-plane" slot="start"></ion-icon>
+          <ion-label>Outbox</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="heart" slot="start"></ion-icon>
+          <ion-label>Favorites</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="archive" slot="start"></ion-icon>
+          <ion-label>Archived</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="trash" slot="start"></ion-icon>
+          <ion-label>Trash</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label>Spam</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Dashboard</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+  </div>
+    <div class="grid grid-cols-3 gap-0 py-14 " style="padding-left: 0;">
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0" >
+      <ion-card-content>
+        <ion-img src="assets/icon/calendar.png"></ion-img>
+
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0">
+      <ion-card-content>
+        <ion-img src="assets/icon/calendar.png"></ion-img>
+        <p class="items-start size text-white text-sm">View schedule</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0">
+      <ion-card-content>
+        <ion-img src="assets/icon/schedule.png"></ion-img>
+        <p class="items-start size text-white text-sm">Add schedule</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0">
+      <ion-card-content>
+        <ion-img src="assets/icon/baby-car.png"></ion-img>
+        <p class="items-start size text-white text-sm">Track my cab</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0">
+      <ion-card-content>
+        <ion-img src="assets/icon/woman.png"></ion-img>
+        <p class="items-start size text-white text-sm">Attendance</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0">
+      <ion-card-content>
+        <ion-img src="assets/icon/shopping.png"></ion-img>
+        <p class="items-start size text-white text-sm">General transport</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0">
+      <ion-card-content>
+        <ion-img src="assets/icon/star.png"></ion-img>
+        <p class="items-center size text-white text-sm">Rating</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0">
+      <ion-card-content>
+        <ion-img src="assets/icon/sos.png"></ion-img>
+        <p class="items-center size text-white text-sm">SOS</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="w-full	bg-blue-500 my-0 mx-0">
+      <ion-card-content>
+        <ion-img src="assets/icon/checklist.png"></ion-img>
+        <p class="items-center size text-white text-sm">GMS</p>
+      </ion-card-content>
+    </ion-card>
+    </div>
+</ion-app>

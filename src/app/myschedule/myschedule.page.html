@@ -1,0 +1,78 @@
+<ion-header >
+  <ion-toolbar color="secondary" >
+  <div class="grid grid-cols-3 gap-4">
+    <div class="col-span-2">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      <h4 class="my-0 inline mx-3">My Schedule</h4>
+    </div>
+    <div class="text-right">
+      Add
+    </div>
+  </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      <ion-buttons end>
+          <button ion-button [disabled]="isToday" (click)="today()">{{viewTitle}}
+          </button>
+      </ion-buttons>
+
+
+
+  <calendar [eventSource]="eventSource"
+  [calendarMode]="calendar.mode"
+  [currentDate]="calendar.currentDate"
+  (onTimeSelected)="onTimeSelected($event)"
+  (onTitleChanged)="onViewTitleChanged($event)" [showEventDetail]="false"
+
+  >
+</calendar>
+
+
+<ion-card class="rounded-none mx-0" style="position: relative;
+bottom: 66%;">
+  <ion-card-content class="p-0">
+    <ion-row class="bg-green-600">
+      <ion-col size="12" class="text-white">
+        Login
+      </ion-col>
+    </ion-row>
+    <ion-row class="p-2">
+      <ion-col size="6">
+        <h4 class="text-green-300">Business center</h4>
+        <h4>RM Test space</h4>
+      </ion-col>
+      <ion-col size="2">
+        <h4>|</h4>
+        <h4 class="relative bottom-1.5">|</h4>
+
+      </ion-col>
+      <ion-col>
+        <h4>Time</h4>
+        <h4>9.00pm</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6"></ion-col>
+      <ion-col class="text-right">
+        <a href="6" class="text-right items-end">clear</a>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
+<ion-row>
+  <ion-col size="9">
+    <ion-label class="p-4">Dates</ion-label>
+  </ion-col>
+  <ion-col size="3">
+    <ion-segment class="border-solid border-2 border-blue-600	rounded-none" size="small">
+      <ion-segment-button>
+        <ion-label class="text-blue-600">+Add</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-col>
+</ion-row>
+<ion-progress-bar class="h-0.5"></ion-progress-bar>
+</ion-content>

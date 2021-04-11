@@ -1,0 +1,31 @@
+<ion-item color="success">
+</ion-item>
+<ion-content class="ion-padding  ion-text-center">
+<div class="logo">
+  <img class="w-60	" src="https://uilogos.co/img/logotype/circle.png">
+</div>
+<form (ngSubmit)="submit()" [formGroup]="loginForm" >
+<ion-item transparent>
+  <ion-input formControlName="email" [ngClass]="{invalidEmail:loginForm.controls.email.dirty && loginForm.controls.email.invalid}" placeholder="Email/Mobile"  name="email" type="text" required></ion-input>
+</ion-item>
+<div *ngIf="loginForm.controls.email.dirty && loginForm.controls.email.invalid">
+  <ion-label class="font-xs text-red-600 text-start">Email/Mobile must be valid.</ion-label>
+</div>
+<ion-item transparent>
+  <ion-input formControlName="password" [ngClass]="{invalidEmail:loginForm.controls.password.dirty && loginForm.controls.password.invalid}" placeholder="Password" name="password"  type="text" required></ion-input>
+</ion-item>
+<div *ngIf="loginForm.controls.password.dirty && loginForm.controls.password.invalid">
+  <ion-label class="font-xs text-red-600 text-start">Password must be min 8 characters.</ion-label>
+</div>
+<br>
+<section class="full-width">
+
+  <ion-button type="submit" [disabled]="loginForm.invalid" expand="full" class="bg-blue-500">Login</ion-button>
+</section>
+</form>
+<div class="items-center">
+  <h4 class="text-blue-500">Register</h4>
+  <h4 class="text-blue-500">Forgot password?</h4>
+  <h4 class="text-blue-500">Privacy policy</h4>
+</div>
+</ion-content>
